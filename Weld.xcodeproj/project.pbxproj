@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A900000A2480760500EB1C6A /* MetalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90000092480760500EB1C6A /* MetalModel.swift */; };
+		A900000E24807C2900EB1C6A /* blub.obj in Resources */ = {isa = PBXBuildFile; fileRef = A900000B24807C2900EB1C6A /* blub.obj */; };
+		A900000F24807C2900EB1C6A /* bob.obj in Resources */ = {isa = PBXBuildFile; fileRef = A900000C24807C2900EB1C6A /* bob.obj */; };
+		A900001024807C2900EB1C6A /* teapot.obj in Resources */ = {isa = PBXBuildFile; fileRef = A900000D24807C2900EB1C6A /* teapot.obj */; };
 		A900FFD9248074ED00EB1C6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FFD8248074ED00EB1C6A /* AppDelegate.swift */; };
 		A900FFDB248074ED00EB1C6A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FFDA248074ED00EB1C6A /* GameViewController.swift */; };
 		A900FFDD248074ED00EB1C6A /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A900FFDC248074ED00EB1C6A /* Renderer.swift */; };
@@ -35,12 +39,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A90000092480760500EB1C6A /* MetalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalModel.swift; sourceTree = "<group>"; };
+		A900000B24807C2900EB1C6A /* blub.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blub.obj; sourceTree = "<group>"; };
+		A900000C24807C2900EB1C6A /* bob.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bob.obj; sourceTree = "<group>"; };
+		A900000D24807C2900EB1C6A /* teapot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teapot.obj; sourceTree = "<group>"; };
 		A900FFD5248074ED00EB1C6A /* Weld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A900FFD8248074ED00EB1C6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A900FFDA248074ED00EB1C6A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A900FFDC248074ED00EB1C6A /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		A900FFDE248074ED00EB1C6A /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
-		A900FFE0248074ED00EB1C6A /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
 		A900FFE1248074EF00EB1C6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A900FFE4248074EF00EB1C6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A900FFE6248074EF00EB1C6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,11 +108,14 @@
 		A900FFD7248074ED00EB1C6A /* Weld */ = {
 			isa = PBXGroup;
 			children = (
+				A900000B24807C2900EB1C6A /* blub.obj */,
+				A900000C24807C2900EB1C6A /* bob.obj */,
+				A900000D24807C2900EB1C6A /* teapot.obj */,
 				A900FFD8248074ED00EB1C6A /* AppDelegate.swift */,
 				A900FFDA248074ED00EB1C6A /* GameViewController.swift */,
+				A90000092480760500EB1C6A /* MetalModel.swift */,
 				A900FFDC248074ED00EB1C6A /* Renderer.swift */,
 				A900FFDE248074ED00EB1C6A /* Shaders.metal */,
-				A900FFE0248074ED00EB1C6A /* ShaderTypes.h */,
 				A900FFE1248074EF00EB1C6A /* Assets.xcassets */,
 				A900FFE3248074EF00EB1C6A /* Main.storyboard */,
 				A900FFE6248074EF00EB1C6A /* Info.plist */,
@@ -236,8 +246,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A900000E24807C2900EB1C6A /* blub.obj in Resources */,
 				A900FFE2248074EF00EB1C6A /* Assets.xcassets in Resources */,
 				A900FFE5248074EF00EB1C6A /* Main.storyboard in Resources */,
+				A900000F24807C2900EB1C6A /* bob.obj in Resources */,
+				A900001024807C2900EB1C6A /* teapot.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +277,7 @@
 			files = (
 				A900FFDF248074ED00EB1C6A /* Shaders.metal in Sources */,
 				A900FFDB248074ED00EB1C6A /* GameViewController.swift in Sources */,
+				A900000A2480760500EB1C6A /* MetalModel.swift in Sources */,
 				A900FFDD248074ED00EB1C6A /* Renderer.swift in Sources */,
 				A900FFD9248074ED00EB1C6A /* AppDelegate.swift in Sources */,
 			);
@@ -328,7 +342,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = marcodejulho.Weld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/ShaderTypes.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -349,7 +363,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = marcodejulho.Weld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(TARGET_NAME)/ShaderTypes.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
